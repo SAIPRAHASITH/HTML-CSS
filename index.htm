@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sai Netflix</title>
+        <link rel="shortcut icon" href="asserts/netflix.ico" style="width:50px;height:50px"> 
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+         <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <meta charset="utf-8">
+        <meta name="keywords" content="sai netflix">
+        <meta name="discription" content="see netflix videos"> 
+        <meta name="viewport"  content="device-width" intial-scale="1.0">
+        <style>
+            img{
+                opacity:1;
+            }
+            .container
+            { 
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height:400px;
+                background-color: rgba(109, 102, 102, 0.2);
+            }
+            .matter{
+                color:white;
+                text-align: center;
+                font-weight: 400 bold;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                
+                
+
+
+            }
+            body
+            {
+                background-image:url("https://singh-cp.github.io/netflix-landingpage/images/netflix-background-image.jpg");
+                opacity: 2;
+
+            }
+            header
+            {
+                display:flex;
+                justify-content: space-between;
+
+            }
+            button
+            {
+               background-color: red;
+               color:white;
+               border: none;
+               border-radius: 5px;
+            }
+            button, select
+            {
+                 height:30px;
+                 width:120px;
+            }
+            #email
+            {
+                  background-color: #ffffff;
+                  color:#090909;
+                  width:400px;
+                  height:40px;
+                  border:none;
+                  
+                  border-radius: 2px;
+               
+
+            }
+            #email:hover
+            {
+                border:none;
+            }
+            .gggg
+            {
+                display:flex;
+                margin-top:5px;
+                margin-right: 10px;
+                
+                
+            }
+        </style>
+    </head>
+    <body>
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <header class="container-fluid">
+            <img src="https://logos-download.com/wp-content/uploads/2016/03/Netflix_Logo_2014.png"  style="width:150px;padding-top:10px;height:50px ;" >
+            <div class="gggg">
+                <div class="dropdown">
+                    <button class="dropdown-toggle  btn btn-secondary" data-bs-toggle="dropdown" data-bs-target="#items" style="text-align:center">
+                    <span class="bi bi-globe"></span>Language
+                    </button>
+                
+                  <div class="dropdown-menu collapse" id="items">
+                    <div class="dropdown-item">English</div>
+                    <div class="dropdown-item">हिंदी</div>
+                    <div class="dropdown-item">తెలుగు</div>
+                    <div class="dropdown-item">मराठी</div>
+                    <div class="dropdown-item">தமிழ்</div>
+                    <div class="dropdown-item">اردو</div>
+                  </div>
+                </div>  
+                <button style="margin-left:10px">Signin</button>
+            </div>
+          </header>
+          <br>
+          <br>
+            <div class="container">
+                <div class="matter">
+                    <h1>Unlimted movies,TV shows and more</h1>
+                    <p>Watch anywhere.Cancel anytime</p>
+                    <p>Ready to Watch?Enter your email to restart your membership.</p>
+                    <p>
+                        
+                        </p>
+                        <div class="gggg">
+                        <input type="email" placeholder="Email address" pattern="/w{2,10}/@/w{3,5}/./w{3}"id="email" class="form-control">
+                        <button  type="submit" style="width:200px;height:40px ;border-radius:2px;margin-left:5px">Get Started<span class="bi bi-chevron-right"></button>
+                      </div>
+                </div>
+            </div>
+        
+    </body>
+</html>
