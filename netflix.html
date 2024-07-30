@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Sai Netflix</title>
+        <link rel="stylesheet" href="./netflix.css">
         <link rel="shortcut icon" href="asserts/netflix.ico" style="width:50px;height:50px"> 
         <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
          <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
@@ -9,85 +10,12 @@
         <meta name="keywords" content="sai netflix">
         <meta name="discription" content="see netflix videos"> 
         <meta name="viewport"  content="device-width" intial-scale="1.0">
-        <style>
-            img{
-                opacity:1;
-            }
-            .container
-            { 
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height:400px;
-                background-color: rgba(109, 102, 102, 0.2);
-            }
-            .matter{
-                color:white;
-                text-align: center;
-                font-weight: 400 bold;
-                font-size: 20px;
-                font-family: Arial, Helvetica, sans-serif;
-                
-                
-
-
-            }
-            body
-            {
-                background-image:url("https://singh-cp.github.io/netflix-landingpage/images/netflix-background-image.jpg");
-                opacity: 2;
-
-            }
-            header
-            {
-                display:flex;
-                justify-content: space-between;
-
-            }
-            button
-            {
-               background-color: red;
-               color:white;
-               border: none;
-               border-radius: 5px;
-            }
-            button, select
-            {
-                 height:30px;
-                 width:120px;
-            }
-            #email
-            {
-                  background-color: #ffffff;
-                  color:#090909;
-                  width:400px;
-                  height:40px;
-                  border:none;
-                  
-                  border-radius: 2px;
-               
-
-            }
-            #email:hover
-            {
-                border:none;
-            }
-            .gggg
-            {
-                display:flex;
-                margin-top:5px;
-                margin-right: 10px;
-                
-                
-            }
-        </style>
     </head>
     <body>
         <script src="../node_modules/jquery/dist/jquery.js"></script>
         <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <header class="container-fluid">
-            <img src="https://logos-download.com/wp-content/uploads/2016/03/Netflix_Logo_2014.png"  style="width:150px;padding-top:10px;height:50px ;" >
+            <img src="asserts/Netflix_Logo_Print_OneColorPMS.jpg"  style="width:150px;padding-top:10px ;" >
             <div class="gggg">
                 <div class="dropdown">
                     <button class="dropdown-toggle  btn btn-secondary" data-bs-toggle="dropdown" data-bs-target="#items" style="text-align:center">
@@ -105,7 +33,7 @@
                 </div>  
                 <button style="margin-left:10px">Signin</button>
             </div>
-          </header>
+       </header>
           <br>
           <br>
             <div class="container">
@@ -122,6 +50,66 @@
                       </div>
                 </div>
             </div>
-        
+        </div>
+        <br>
+        <br>
+        <footer>
+            <div class="container-fluid  " style="border-top:8px solid grey ;background-color:black;padding:20px">
+                <div class="container1">
+                   <h2 style="color:white;text-align:center; padding:20px">Frequently Asked Questions</h2>
+                </div>
+                <div class="myclass">
+                    <div class="accordion" id="topics" style="padding:2px">
+                        <div class="accordion-item border border-0" style="background-color:rgb(28, 27, 27)">
+                            <div class="accordion-header">
+                               
+                                  <div class="p1">
+                                 
+                                    <p>What is Netflix?</p>
+                                    <button class="bi bi-plus btn btn-dark " data-bs-toggle="collapse" data-bs-target="#what" style="border:none;background-color: none;"></button>
+                                  
+                                   </div>
+                                  
+                                <div id="what" class="accordion-body accordion-collapse collapse " data-bs-parent="#topics" style="border-top: 2px solid black;">
+                                  <p class=" justify-content-around p-2" style="color:#ffffff">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected devices.</p>
+                                  <p class=" justify-content-around p-2" style="color:#ffffff">You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item border border-0" style="background-color:rgb(28, 27, 27) ;margin-top:2px">
+                            <div class="accordion-header">
+                               
+                                  <div class="p1">
+                                 
+                                    <p>How much does Netflix cost?</p>
+                                    <button class="bi bi-plus btn btn-dark " data-bs-toggle="collapse" data-bs-target="#how" style="border:none;background-color: none;"></button>
+                                  
+                                   </div>
+                                  
+                                <div id="how" class=" accordion-body  accordion-collapse collapse" data-bs-parent="#topics" style="border-top: 2px solid black;">
+                                  <p class=" justify-content-around p-2" style="color:#ffffff">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.</p>
+                                  
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="accordion-item border border-0" style="background-color:rgb(28,27,27) ;margin-top:2px">
+                            <div class="accordion-header">
+                                <div class="p1">
+                                    <p>Where I can watch?</p>
+                                    <button class="bi bi-plus btn btn-dark" data-bs-toggle="collapse" data-bs-target="#watch" style="border:none;background-color: none;" ></button>
+                                </div>
+                                <div id ="watch" class="accordion-body accordion-collapse collapse" data-bs-parent="#topics" style="border-top: 2px solid black;">
+                                    <p class=" justify-content-around p-2" style="color:#ffffff">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.</p>
+                                    <p class=" justify-content-around p-2" style="color:#ffffff">You can also download your favourite shows with the iOS or Android app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>    
     </body>
 </html>
