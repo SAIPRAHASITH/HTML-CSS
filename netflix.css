@@ -1,0 +1,85 @@
+img{
+    opacity:1;
+}
+.container
+{ 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+    background-color: rgba(47, 44, 44, 0.2);
+}
+.matter{
+    color:white;
+    text-align: center;
+    font-weight: 400 bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+
+
+}
+.bgg
+{
+    background-image:url("asserts/Netflix-Background.jpg");
+    height:1000px;
+    opacity: 2;
+
+}
+header
+{
+    display:flex;
+    justify-content: space-between;
+
+}
+button
+{
+   background-color: red;
+   color:white;
+   border: none;
+   border-radius: 5px;
+}
+button, select
+{
+     height:40px;
+     width:120px;
+}
+#email
+{
+      background-color: #ffffff;
+      color:#090909;
+      width:400px;
+      height:40px;
+      border:none;
+      
+      border-radius: 2px;
+   
+
+}
+#email:hover
+{
+    border:none;
+}
+.gggg
+{
+    display:flex;
+    margin-top:5px;
+    margin-right: 10px;
+    
+    
+}
+.myclass{
+    
+    width:1000px;
+    margin-left:250px;
+    background-color: #000000;
+}
+.p1{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    color: white;
+    
+}
